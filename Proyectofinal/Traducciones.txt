@@ -1,0 +1,10 @@
+hola,ciao,bonjour,hallo,hello
+adios,addio,au revoir,auf wiedersehen,goodbye
+gracias,grazie,merci,danke,thanks
+por favor,per favore,s'il vous plaît,bitte,please
+buenos dias,buongiorno,bonjour,guten morgen,good morning
+buenas noches,buona notte,bonne nuit,gute nacht,good night
+amigo,amico,ami,freund,friend
+familia,famiglia,famille,familie,family
+comida,cibo,nourriture,essen,food
+agua,acqua,eau,wasser,water
