@@ -1,10 +1,15 @@
-﻿#include <iostream>
+﻿#include <cstdlib>
+#include <iostream>
 #include <fstream>
 #include <string>
 #include <sstream>
+#include <unordered_map>
+#include "Usuario.h"
+#include "utils.h"
+
 
 using namespace std;
-
+Usuario* usuarioActivo = nullptr;
 struct Nodo
 {
     string espanol, italiano, frances, aleman, ingles;
@@ -301,14 +306,26 @@ public:
 
     void guardarEnArchivo()
     {
-        ofstream archivo("Traducciones.txt");
-        if (!archivo.is_open())
-        {
-            cerr << "Error al abrir el archivo para guardar\n";
-            return;
+        if (usuarioActivo) {
+            ofstream archivo(usuarioActivo->nombre + ".txt");
+            if (!archivo.is_open())
+            {
+                cerr << "Error al abrir el archivo para guardar\n";
+                return;
+            }
+            inOrdenArchivo(raiz, archivo);
+            archivo.close();
         }
-        inOrdenArchivo(raiz, archivo);
-        archivo.close();
+        else {
+            ofstream archivo("Traducciones.txt");
+            if (!archivo.is_open())
+            {
+                cerr << "Error al abrir el archivo para guardar\n";
+                return;
+            }
+            inOrdenArchivo(raiz, archivo);
+            archivo.close();
+        }
     }
 };
 
@@ -344,6 +361,67 @@ void limpiarBuffer()
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
 
+void iniciarSesion() {
+    std::string nombre, clave;
+    std::cout << "\n--- INICIAR SESION ---\n";
+    std::cout << "NOMBRE DE USUARIO : ";
+    std::getline(std::cin, nombre);
+    std::cout << "CLAVE  : ";
+    std::getline(std::cin, clave);
+
+    std::ifstream archivo("usuarios.txt");
+    std::string linea;
+    bool encontrado = false;
+
+    while (std::getline(archivo, linea)) {
+        size_t coma = linea.find(',');
+        std::string nombreGuardado = linea.substr(0, coma);
+        std::string claveGuardada = linea.substr(coma + 1);
+
+        if (nombreGuardado == nombre && Decode(claveGuardada) == clave) {
+            usuarioActivo = new Usuario(nombre, clave);
+            std::cout << "SESION INICIADA COMO : '" << nombre << "'\n";
+            encontrado = true;
+            break;
+        }
+    }
+
+    archivo.close();
+
+    if (!encontrado) {
+        std::cout << "USUARIO O CLAVE INCORRECTOS.\n";
+    }
+}
+
+void saveFileEncodeUser() {
+    std::ifstream archivo( usuarioActivo->nombre + ".txt");
+    std::ofstream archivoUsuarioEncode(usuarioActivo->nombre + "_Encode.txt", std::ios::app);
+    std::string linea;    
+
+    while (std::getline(archivo, linea)) {
+        archivoUsuarioEncode << Encode(linea) << "\n";        
+    }
+    archivo.close();
+    archivoUsuarioEncode.close();
+}
+
+void crearUsuario() {
+    std::string nombre, clave;
+    std::cout << "\n--------------- CREAR USUARIO -----------------\n";
+    std::cout << "NOMBRE DE USUARIO ";
+    std::getline(std::cin, nombre);
+    std::cout << "CLAVE : ";
+    std::getline(std::cin, clave);
+
+    usuarioActivo = new Usuario(nombre, clave);
+    std::cout << "USUARIO '" << nombre << "' CREADO EXITOSAMENTTE\n";
+
+    //PARA GUARDAR USUARIO
+    std::ofstream archivoUsuarios("usuarios.txt", std::ios::app);
+    archivoUsuarios << usuarioActivo->nombre << "," << usuarioActivo->claveEncriptada << "\n";
+    archivoUsuarios.close();
+}
+
 void mostrarMenu()
 {
     cout << "  \n";
@@ -353,15 +431,21 @@ void mostrarMenu()
     cout << "3. Agregar nueva palabra\n";
     cout << "4. Eliminar palabra\n";
     cout << "5. Guardar en archivo\n";
-    cout << "6. Salir\n";
+    cout << "6. Limpiar Consola\n";
+    cout << "7. Guardar Archivo Encriptado por Usuario\n";
+    cout << "8. Salir\n";
     cout << "Seleccione una opcion: ";
 }
 
-int main()
-{
+void MenuArchivos() {    
     ArbolTraducciones arbol;
-    cout << " Iniciando sistema de traducciones...\n";
-    leerArchivo("Traducciones.txt", arbol);
+    cout << " ---------------------------    Sistema de traducciones Iniciado ------------------------------------------ \n";
+    std::cout << " SESION INICIADA COMO : '" << usuarioActivo->nombre << "'\n";
+
+    if(!usuarioActivo)
+        leerArchivo("Traducciones.txt", arbol);
+    else
+        leerArchivo(usuarioActivo->nombre + ".txt", arbol);
 
     int opcion;
     do
@@ -438,12 +522,75 @@ int main()
             cout << "\n Cambios guardados correctamente.\n";
             break;
         case 6:
+            system("cls");
+            break;
+        case 7:
+            saveFileEncodeUser();
+            cout << "\n Archivo guardado correctamente.\n";
+            break;
+        case 8:
             cout << "\n Saliendo del programa.\n";
             break;
         default:
             cout << "\n Opcion no valida.\n";
         }
-    } while (opcion != 6);
+    } while (opcion != 8);
+}
 
+void crearArchivo() {
+    if (!usuarioActivo) {
+        std::cout << "DEBES INICIAR SESION PRIMERO\n";
+        return;
+    }
+
+    std::string contenido;
+    std::cout << "\n------------------ CREAR EL ARCHIVO PROTEGIDO -------------------\n";
+    std::cout << "ESCRIBE EL CONTENIDO DEL ARCHIVO";
+    std::getline(std::cin, contenido);
+
+    std::string codificado = codificarTexto(contenido);
+    std::string firma = generarFirma(codificado);
+
+    std::string nombreArchivo = usuarioActivo->nombre + "_archivo.seg";
+    std::ofstream archivo(nombreArchivo);
+    archivo << codificado << "\n" << firma;
+    archivo.close();
+
+    std::cout << "ARCHIVO GUARDADO COMO " << nombreArchivo << "\n";
+}
+
+void MenuSesion() {
+    int opcion;
+    do {
+        std::cout << "\n=========== MENU PRINCIPAL ===========\n";
+        std::cout << "1. CREAR USUARIO\n";
+        std::cout << "2. INICIAR SESION\n";
+        std::cout << "3. CREAR ARCHIVO PROTEGIDO\n";
+        std::cout << "0. SALIR\n";
+        std::cout << "SELECCIONE UNA OPCION: ";
+        std::cin >> opcion;
+        std::cin.ignore(); // PARA LIMPIAR EL BUFFER DEL ENTER
+
+        switch (opcion) {
+        case 1: crearUsuario(); break;
+        case 2: iniciarSesion();  return; break;
+        case 3: crearArchivo(); break;
+        //case 0: std::cout << "SALIENDO......\n"; break;
+        default: std::cout << "OPCION INVALIDA.\n"; break;
+        }
+    } while (opcion != 0);
+
+    //delete usuarioActivo;
+    
+}
+
+int main()
+{
+    MenuSesion();
+    if (usuarioActivo) {
+        system("cls");        
+        MenuArchivos();
+    }
     return 0;
 }
+
