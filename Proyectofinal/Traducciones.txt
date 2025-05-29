@@ -1,10 +1,255 @@
-hola,ciao,bonjour,hallo,hello
-adios,addio,au revoir,auf wiedersehen,goodbye
-gracias,grazie,merci,danke,thanks
-por favor,per favore,s'il vous pla√Æt,bitte,please
-buenos dias,buongiorno,bonjour,guten morgen,good morning
-buenas noches,buona notte,bonne nuit,gute nacht,good night
+aagua ,acqua,eau,wasser,water
+abajo,giu,bas,unten,down
+abeja,ape,abeille,biene,bee
+abrigo,cappotto,manteau,mantel,coat
+abuela,nonna,grand-mere,grobmutter,grandmother
+abuelo,nonno,grand-pere,grobvarte,grandfather
+agua,acqua,eau,wesser,water
+aire ,air ,luft,air,air
+alto,alto,haut,hoch,tall
 amigo,amico,ami,freund,friend
+amor ,amore,amour ,liebe ,love
+ancho,largo,large,breit,wide
+anillo,anello,bague,Ring,ring
+ano,anno,anee,jahr,year
+arana,rango,araignee,spinner,spider 
+arbol ,albero ,arbe,baum,tree
+arcoiris,arocobaleno,arcenciel,regenbogen,rainbow
+arriba,su,haut,oben,up
+arroz,riso,riz,reis,rice
+ayer,ieri,hier,gestern,yesterday
+azucar,zucchero,sucre,zucker,sugar
+baile,ballo,danse,tanz,dance 
+bajo,basso,bas,niedring,short
+ballena,balena,baleine,wal,whale
+barba,barba,barbe,bart,beard
+basura,spazzatura,ordures ,mull,trash
+blando,morbido,mou,weich,soft
+boca,bocca,bouche,mund,mouth
+boligrafo,penna,stylo,kugelschreiber,pen
+bolso ,borsa,sac,tasche,bag
+brazo,braccio,brass,arm,arm
+bueno,buono,bon,gut,good
+bufanda,sciarpa,echarpe,schal,acrarf
+caballo,cavallo,chavel,pferd,horse 
+cabello,capelli,cheveux,haar,hair
+cabeza,testa,tete,kopf,head 
+cafe,caffe,cafe,kaffee,coffee
+calcetin,calzino,chaussette,socke,sock
+calle ,strade,chemin,weg,path
+calor,caldo,chaud,hitze,heat
+cama,letto,lit,bett,bed 
+camino,strada,strada,rue,strabe
+camisa,camicia ,chemise,hemd,shirt
+cancion,canzone,chanson,lied,song
+cansado,stanco,fatigue,mude,tired
+cara,viso,visage,gesicht,face
+carne,carne,viande,fleisch,meat
+casa,casa,maison,haus ,house 
+cepillo,spazzola,brosse,burste,brush
+cerdo,maiale ,cochon,schwein,pig
+cerveza,birra,biere,bier,beer
+champu,shampoo,shampooing,shampoo,shampoo
+chaqueta,giacca,veste,jacke,jacket
+cielo,cielo ,ciel ,himmel ,sky
+ciudad,citta,ville,stadt,city
+codo,gomito,coude,ellbogen ,elbow
+collar,collana,collier,halskette,necklace
+computadora,computer,ordinateur,computer,computer
+corazon,cuore,coeur,herz,heart
+corto,corto,court,kurz,short
+cuaderno,quaderno,cahier,heft,notebook
+cuchara,cuchiaio,cuillere,loffel,spoon
+cuchillo,coltello,couteau,messer,knife
+dedo,dito,doigt,finger,finger
+dentro,dentro,dedans,innnen,inside
+deporte,sport,sport,sport,sport
+derecha,ovest,ouest,westen,right
+dia ,giorno ,jour,tag ,day 
+diente,dente,dent ,zahn ,tooth
+dinero,denaro,argent,geld ,money
+doctor,dottore,docteur,arzt,doctor
+duro,duro,dur,nart,nard
+elefante,elefante,elephant,elefant,elephant
+enojado,arrabiato,encolere,wutend,angry
+escoba,scopa,balai,besen ,broom
+escuela,scuola,ecole,schule,school
+espalda,schiena,dos,rucken,back
+espejo,specchio,miroir,spiegel,mirror
+este,est,est,oesten,east
+estomago,stomaco,estomac,magen,stomach
+estrecho,stretto,etroit,schumal,narrow
+estrella ,strella,Çtoile,strern,star
+estudiante,studente,etudiant,student,student
+falda,gonna,jupe,rock,skirt
 familia,famiglia,famille,familie,family
-comida,cibo,nourriture,essen,food
-agua,acqua,eau,wasser,water
+feliz,felice,heureux,glucklich,happy
+flor ,fiore,fleur,blueme,flowe 
+fresa,fragola,fraise,erdbeere,strawberry
+frio,freddo,froid,kalte,cold
+fruta,frutta,fruit,frucht,fruit
+fuego,fuici,feu,feuer,fire
+fuera,fuori,dehors,auben,outside
+gafas,occhiali,lunettes,brille,glasses
+gallina,gallina,poule ,henne,hen
+gato,gatto,chat ,katze,cat
+grande,grande,grand,grob,big
+guante,guanto,gant,handschuh,glove
+hambre,fame,faim,hunger,hunger
+hermana,sorella,soeur,schwester,sister
+hermano,fratello,frere,bruder,brother
+hija,figlia,fille,tochter,daughter
+hijo,figlio,fild,sohn,son
+hoja,foglia,feuile ,blatt,leaf
+hombre,uomo,homme,mann ,man 
+hombro ,spalla,epaule,schulte,shoulder
+hora,ora,heure,stunde,hour
+horno,forno,four,ofen,oven
+hoy,oggi,aujourhui6,heute,today
+hueso,osso,os,knochen,bone
+huevo,uovo,oeuf,ei,egg
+invierno,invierno,hiver,winter,winter
+isla,isola,ile,insel ,island
+izquierda,sinistra,gauche,links,left
+jabon,sapone,savon,seife,soap
+jardin,giardino,jardin,garten ,garden 
+joya,gioiello,bijou,schmuch,jewel
+juego,gioco,jeu,spiel,game
+jugo,succo,jus,saft,juice
+lago,lago,lac ,see,lake
+lapiz,matita,crayon,bleistift,pencil
+largo,lungo,long,lang,long
+lavadora,lavatrice,machine a laver,waschmaschine,washing machine
+leche,latte,lait,milch,milk
+leche ,latte,lait,milch,milk
+lento,lento,lent,langsam,slow
+leon,leone,lion,lowe,lion
+libro,libro,livre,buch,book
+ligero,leggero,leger,leicht,light
+limon,limone,citron,zitrone,lemon
+llave,chiave,baite,kidte ,box
+lluvia,pioggia,pluie,regen,rain
+luna,luna,lune,mond,moon
+luz ,luce,lumiere,licht,light
+madre,madre,mere,mutter,mother
+maleta,valigia,valise ,koffer,suitcase
+malo,cattivo,mauvais,schlecht,bad
+manana ,mattina,matin,morgen,morning
+mano ,mano,main,hand,hand 
+manta,coperta,couverture,decke ,blanket
+manzana,mela,pomme,apfel,apple
+maquillaje,trucco,maquillage,make-up,makeup
+mar ,mare ,mer,meer ,sea 
+mariposa,farfalla,papillon,schmetterling,butterfly
+mes,mese,mois,monat,month
+mesa,tavolo,table,tisch,table
+microondas,microonde,micro-ondes,mikrowelle,microwave
+minuto,minuto,minute,minute,minute
+mono,scimmia,singe,affe,monkey
+monta§a ,montagna,montagne,berg,mountain 
+mujer,donna,femme,frau,women
+musica,musica,musique,musik,music
+mu§eca,polso,poignet,handgelenk,wrist
+naranja,arancia,orange,orange,orange
+nariz,naso,nez,nase,nose
+nevera,frigorifero,refrigerateur,kuhlschrank,fridge
+nieve,neve,niege,schnee,snow
+noche ,notte,nuit,nacht,night
+norte,nord,nord,norden,north
+nube,nuvola,nuage,wolke,cloud 
+nuevo,nuovo,nouveau,neu,new
+oeste,est,ouest,westen,west
+ojo,occhio,oeil,auge,eye
+olla,pentola,poele,pfanne,pan
+oreja,orecchio,oreille,ohr,ear
+oso,orso,ours,Bar,bear
+otono,autunno,automne,herbst,autumn
+oveja ,pecora,mouton,schaf,sheep
+padre,padre,pere,vater,father
+pajaro,uccello,oiseau,vogel,bird
+pan,pane,pain,brot,bread
+pan ,pane,pain ,brot,bread
+pantalon,pantaloni,pantalon,hose,pants 
+papel,carta,papier,papier,paper
+paraguas ,ombrello,parapluie,regenschirm,umbrella
+pared,muro,mur,wand,wall
+pasta,pasta,pates,nudeln,pasta
+pecho,petto,poitrine,brust,chest
+pegamento,colle,kleber,glue,glue
+peine,pettine,peigne,kamm,comb
+pequeno,piccolo,petit,klein,small
+perro,cane ,chien,hund ,dog
+pesado,pesante,lourd,schwer,heavy
+pescado,pesce,poisson,fisch,fishFood
+pez,pesce,poisson,fisch,fish
+pez ,pesce ,poisson,fisch,fish
+pie ,piede ,pied,fub,foot
+piedra,pietra,pierre,stein ,stone
+piel,pelle,peau,haut,skin
+pierna,gamba,jambe,bein,leg
+platano,banana,banane,banane,banana
+plato,piatto,assiette,teller,plate
+pluma,penna,plume ,feder ,feather
+pollo,pollo,poulet,huhn,chicken
+primavera,primavera,printemps,fruhling,spring
+profesor,professore,professeur,lehrer ,teacher
+pueblo,villaggio,village,dorf,village
+puente ,ponte,pont,brucke,bridge
+puerta,porta ,porte ,tur,dor
+pulsera ,orologio,montre,armbanduhr,watch
+queso,formaggio,fromage,kase,chaeese
+radio,radio,radio,radio,radio
+rana,rana,grennouille,frosch,frog
+rapido,veloce,rapide,scnell,fast
+raton,topp,souris ,maus ,mouse 
+regalo,regalo,cadeau,geschenk,gift
+reloj,orologio,horloge,uhr,clock
+reloj ,orologio,horloge ,uhr,clock
+rio,fiume,fleuve,fluss,river
+rodilla,ginocchio,genou,knie,knee
+rojo,rosso,rouge,rot,red
+ropa,vestiti,vetements,kleidnung,clothes
+sal,sale,sel,salz,salt
+sandia ,anguiria ,pasteque,wassermelone,watermelon 
+sangre,sangue,sang,blut,blood
+secadora,asciugatrice,seche-linge,trockner,dryer
+sed,sete,soif,durst,thirst
+segundo,secondo,seconde,sekunde,second
+semana,settimana,semaine ,woche,week
+serpiente,serpente,serpent,schlange,snake
+silla ,sedie ,chaise ,stuhl,chair
+sol,sole ,soleil,sonne ,sun
+sombrero ,cappello ,chapeau,hut,hat
+sopa,zuppa,soupe,suppe,soup
+suelo,pavimento ,sol ,boden,floor
+sur,sud,sud,suden,south
+tarde,pomeriggio,apres-midi,nachmittag,afternoon
+taza,tazza,tasse,Tasse,cup
+te,te,the,tee,tea
+techo,tetto,toit,dach,roof
+telefono,telefono,telephone,telefon,phone
+television ,televisione,television ,fernseher,television 
+tenedorv,forchetta,fourchette,gabel,fork
+tiempo,tempo,temps,zeit,time
+tierra ,terra ,terre,erde ,earth 
+tigre,tigre,tigre,tiger,tiger
+tijeras,forbici,ciseaux,schere,scissors
+toalla,asciugamano,serviette,handtuch,towel
+tobillo,caviglia,cheville,knochel,ankle
+tormenta,tempesta,tempete,sturm,storm
+trabajo,lavoro,travial,arbeit,work
+trapeador,miocio,serpilliere,mopp,mop
+triste,triste,triste,truring,sad
+una,unghia,ongle,nagel,nail
+uva,uva,raisin,traube,cup
+vaca,mucca,vache ,kuh,cow
+vaso,bicchiere,verre,glas,glass
+vecino,vicino,voisin,nachbar,neighbor
+ventana,finestra,fenetre,fenster,windows
+verano,estate,ete,sommer,sumer
+verde,verde ,vert,grÅn,green
+vestido,vestido,robe,kleid ,dress
+viejo,vecchio,vieux,alt,old
+viento,vento,vent,wind ,wind 
+vino,vino,vin,wein,wine
+zapato,scarpa,chaussure,schuh,shoe
